@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    rocketchat_bot_wakeonlan:
+        build: ./
+        image: rocketchat_bot_wakeonlan
+        network_mode: host
+        restart: always
+        volumes:
+            - "./:/usr/src/app/"
