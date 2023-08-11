@@ -3,13 +3,14 @@ const wol = require('wakeonlan')
 const arp = require('@network-utils/arp-lookup');
 
 // Environment Setup
-const HOST = 'https://rocketchat.lasseufpa.org';
-const USER = 'wakeonlan';
-const PASS = ''; // TODO read password from environment variable
-const BOTNAME = 'WakeOnLan bot';
+const HOST = process.env.HOST;
+const USER = process.env.USER;
+const PASS = process.env.PASS;
 const SSL = true;
-const RESPOND_TO_DM = true
-// const ROOMS = [''];
+console.log('HOST: ' + HOST);
+console.log('USER: ' + USER);
+console.log('PASS: ' + PASS);
+
 var myUserId;
 
 // Bot configuration

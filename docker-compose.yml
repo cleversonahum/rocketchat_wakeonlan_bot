@@ -8,3 +8,7 @@ services:
         restart: always
         volumes:
             - "./:/usr/src/app/"
+        environment:
+            - HOST=<HOSTNAME_HERE>
+            - USER=<BOT_USERNAME_HERE>
+            - PASS=<BOT_PASSWORD_HERE>
