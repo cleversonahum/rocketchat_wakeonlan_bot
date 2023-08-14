@@ -6,8 +6,6 @@ services:
         image: rocketchat_bot_wakeonlan
         network_mode: host
         restart: always
-        volumes:
-            - "./:/usr/src/app/"
         environment:
             - HOST=<HOSTNAME_HERE>
             - USER=<BOT_USERNAME_HERE>
